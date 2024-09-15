@@ -1,0 +1,65 @@
+.secondPage {
+    background-color: #ffffff;
+}
+
+.secondCont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.weatherCont {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.city {
+    font-size: 6vw;
+
+}
+
+.weatherIcon {
+    width: 40%;
+    height: auto;
+    
+}
+
+.weatherTemp {
+    font-size: 6vw;
+
+}
+
+.weatherInfo {
+    font-size: 3vw;
+
+}
+
+.slideshowCont {
+    width: 48%;
+    height: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshowCont img {
+    width: 90%;
+    /* height: 90%; */
+    height: auto;
+    display: none;
+}
+
+.slideshowCont img.active {
+    display: block;
+
+}

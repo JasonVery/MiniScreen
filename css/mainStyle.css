@@ -1,0 +1,34 @@
+/* Main Styles for miniScreenApp */
+/* Font is from googlewebfonts */
+@font-face {
+    font-family: mainAppFont;
+    src: url(../assets/fonts/OpenSans-Medium.ttf);
+}
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: mainAppFont;
+}
+
+/* Disable scrollbars */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Gives the snapping affect from page to page */
+.mainCont {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+.firstPage,
+.secondPage,
+.thirdPage {
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+}

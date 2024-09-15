@@ -1,0 +1,51 @@
+.firstPage {
+    background-color: #ffffff;
+}
+
+.firstcont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 96%;
+    height: 78%;
+
+}
+
+
+.time {
+    font-size: 18vw;
+    /* Getting rid of the space between the numbers */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    margin-top: 8%;
+}
+
+/* Overrides the default to allow some space and change font size */
+#timeOfDay {
+    font-size: 10vw;
+    margin-left: 1%;
+}
+
+.date {
+    font-size: 5vw;
+
+}
+
+.greeting {
+    font-size: 3.4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Trying to add  touch of colour somewhere */
+}

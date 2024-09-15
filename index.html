@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miniScreenApp</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/mainStyle.css">
+    <link rel="stylesheet" href="/css/firstPage.css">
+    <link rel="stylesheet" href="/css/secondPage.css">
+    <link rel="stylesheet" href="/css/thirdPage.css">
+    <!-- Manifest -->
+    <link rel="manifest" href="/mainfest.json">
+
+
+</head>
+
+<body>
+    <!-- This is the main container for the entire app -->
+    <div class="mainCont">
+        <!-- Div for first page, contains a clock and welcome message -->
+        <div class="firstPage">
+            <div class="firstcont">
+                <div class="clock">
+                    <div class="time">
+                        <span id="hour">00</span>:
+                        <span id="minute">00</span>
+                        <span id="timeOfDay">am</span>
+                    </div>
+
+                    <div class="date">
+                        <span id="dayname">Day</span>,
+                        <span id="month">Month</span>
+                        <span id="dayNumber">00</span>,
+                        <span id="year">Year</span>
+                    </div>
+                </div>
+
+                <div class="greeting">
+                    <span id="greet">Loading ...</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Div for second page, contains weather and slide show -->
+        <div class="secondPage">
+            <div class="secondCont">
+                <div class="weatherCont">
+                    <div class="city" id="city">Calgary</div>
+                    <img class="weatherIcon" id="weatherIcon"></img>
+                    <div class="weatherTemp" id="weatherTemp">Temp</div>
+                    <div class="weatherInfo" id="weatherInfo">Info</div>
+
+
+                </div>
+                <div class="slideshowCont" id="slideshowCont"></div>
+            </div>
+        </div>
+
+        <!-- Div for third page, Music Plaer -->
+        <div class="thirdPage">
+            <div class="thirdCont">
+                <div class="artCont">
+                    <div class="songArt" id="songArt"> <img id="songArtimg" src="" /></div>
+                </div>
+                <div class="mediaCont">
+                    <div class="mediaInfo">
+                        <div class="songInfo">
+                            <div class="songName" id="songName">Song Name</div>
+                            <div class="artist" id="artist">Artist</div>
+                        </div>
+                        <div class="playBackControls" id="playBackControls">
+                            <div class="prevSong" id="prevSong"> <img id="prevSongImg" src="./assets/mediaControls/icons8-skip-to-start-100.png"></div>
+                            <div class="playPause" id="playPause"> <img id="playPauseImg" src="./assets/mediaControls/icons8-play-100.png"> </div>
+                            <div class="nextSong" id="nextSong"> <img id="nextSongImg" src="./assets/mediaControls/icons8-end-100.png"></div>
+                        </div>
+                    </div>
+                    <div class="playlists">
+                        <div class="radio" id="radio">Radio</div>
+                        <div class="country" id="country">Country</div>
+                        <div class="everyday" id="everyday">Everyday</div>
+                        <div class="chillAtHome" id="chillAtHome">Home</div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+
+    </div>
+
+    <!-- Scripts  -->
+    <script src="https://js-cdn.music.apple.com/musickit/v3/musickit.js"></script>
+    <script src="/js/clock.js"></script>
+    <script src="/js/music.js"></script>
+    <script src="/js/slideshow.js"></script>
+    <script src="/js/weather.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(registration => {
+                    console.log('Service Worker registered with scope:', registration.scope);
+                })
+                .catch(error => {
+                    console.log('Service Worker registration failed:', error);
+                });
+        }
+    </script>
+
+</body>
+
+</html>
