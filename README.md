@@ -7,3 +7,5 @@ In the future I want to build upon this app by making the code more industry sta
 Goals of miniScreen: Create my first solo, out of school coding project, Learn a bit of front end languages like html, css and javascript, Work with apis, Have a really cool and functional product at my desk.
 
 While going through the source code of this project please remember: This is my FIRST solo coding ptoject dealing with languages I didnt really know, This is not meant for anyone other than myself, I am still learning and trying to have fun :)
+
+Please check out the wiki for some photos in action! (https://github.com/JasonVery/MiniScreen/wiki)
