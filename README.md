@@ -8,4 +8,4 @@ Goals of miniScreen: Create my first solo, out of school coding project, Learn a
 
 While going through the source code of this project please remember: This is my FIRST solo coding ptoject dealing with languages I didnt really know, This is not meant for anyone other than myself, I am still learning and trying to have fun :)
 
-Please check out the wiki for some photos in action! (https://github.com/JasonVery/MiniScreen/wiki)
+Please check out the wiki for some photos in action! (https://github.com/JasonVery/MiniScreen/wiki/MiniScreen-Photos)
